@@ -5,7 +5,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/jre
 ENV MESOS_NATIVE_JAVA_LIBRARY /usr/lib/libmesos-1.0.1.so
 
 # TODO CHANGE TO MY DEV SNAPSHOT
-ADD https://github.com/Makman2/flink-dev-builds/blob/master/flink-1.2-DEV-SNAPSHOT-bin-hadoop2.tar.gz?raw=true /tmp/flink.tar.gz
+COPY flink/flink-1.2-DEV-SNAPSHOT-bin-hadoop2.tar.gz /tmp/flink.tar.gz
 RUN tar -xzf /tmp/flink.tar.gz -C /opt
 
 ENV MESOS_SANDBOX /opt/flink-1.2-SNAPSHOT
