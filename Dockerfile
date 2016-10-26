@@ -1,4 +1,4 @@
-FROM mesosphere/mesos:1.0.11.0.1-2.0.93.ubuntu1404
+FROM mesosphere/mesos:1.0.1-2.0.93.ubuntu1404
 
 # TODO Use openjdk-8 ?
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/jre
