@@ -60,8 +60,8 @@ taskmanager.memory.preallocate: false
 
 # Specify an OpenJDK container to use for flink. Also override JAVA_HOME as the Mesos
 # containerizer does not inherit environment variables from the container.
-taskmanager.container: openjdk
-taskmanager.java-home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+mesos.resourcemanager.tasks.container.image.name: openjdk:8-jre
+containerized.taskmanager.env.JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64/jre
 
 # The parallelism used for programs that did not specify and other parallelism.
 
